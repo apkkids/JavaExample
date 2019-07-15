@@ -1,6 +1,7 @@
 package apkkids.com.collection;
 
 import apkkids.com.reflection.ReflectionUtils;
+import javafx.util.Pair;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -30,14 +31,12 @@ public class HashMapUsage {
         }
 
         Set<String> keySet = map.keySet();
-        for (String s : keySet
-                ) {
+        for (String s : keySet) {
             System.out.println(s + "," + map.get(s));
         }
 
         Set<Map.Entry<String, String>> entrySet = map.entrySet();
-        for (Map.Entry<String, String> entry : entrySet
-                ) {
+        for (Map.Entry<String, String> entry : entrySet) {
             System.out.println(entry.getKey() + "---" + entry.getValue());
         }
     }
